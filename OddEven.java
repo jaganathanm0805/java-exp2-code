@@ -7,19 +7,15 @@ public class OddEven {
         int[] odd = new int[10];
         int[] even = new int[10];
         int o = 0, e = 0;
-
-        // Input
         System.out.println("Enter 10 numbers:");
         for (int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
         }
-
-        // Process numbers
         for (int i = 0; i < 10; i++) {
             if (arr[i] % 2 == 0)
-                even[e++] = arr[i] * arr[i] * arr[i]; // cube
+                even[e++] = arr[i] * arr[i] * arr[i];
             else
-                odd[o++] = arr[i] * arr[i]; // square
+                odd[o++] = arr[i] * arr[i]; 
         }
 
         // Output
@@ -38,3 +34,4 @@ public class OddEven {
         sc.close();
     }
 }
+
